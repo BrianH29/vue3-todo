@@ -1,11 +1,11 @@
 <template>
-  <h1>MY TODO LIST</h1>
+  <section class="header__title">
+    <span>TODAY'S PLAN</span>
+  </section>
 </template>
 
 <style lang="scss" scoped>
-@import '../assets/scss/common/_variable.scss';
-
-h1 {
-  color: map-get($font-color, 'red');
+.header__title {
+  @include header-title;
 }
 </style>

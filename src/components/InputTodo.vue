@@ -1,0 +1,19 @@
+<script></script>
+
+<template>
+  <form class="input__wrapper" action="">
+    <input type="text" />
+  </form>
+</template>
+
+<style lang="scss" scoped>
+.input__wrapper {
+  padding: 0 3rem;
+
+  input {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid black;
+  }
+}
+</style>
