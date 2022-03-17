@@ -3,6 +3,7 @@
 <template>
   <form class="input__wrapper" action="">
     <input type="text" />
+    <font-awesome-icon icon="pencil" />
   </form>
 </template>
 
