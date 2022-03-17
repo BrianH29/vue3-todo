@@ -1,12 +1,15 @@
 <script setup>
 import HeaderTodo from './components/HeaderTodo.vue';
 import InputTodo from './components/InputTodo.vue';
+import { ref } from 'vue';
+
+const inputValue = ref('');
 </script>
 
 <template>
   <div class="wrapper">
     <HeaderTodo />
-    <InputTodo />
+    <InputTodo v-model="inputValue" />
   </div>
 </template>
 
