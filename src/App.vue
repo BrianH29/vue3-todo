@@ -2,8 +2,9 @@
 import HeaderTodo from './components/HeaderTodo.vue';
 import InputTodo from './components/InputTodo.vue';
 
-function submitValue(e) {
-  console.log('check value', e);
+function submitValue(inputValue) {
+  console.log('input : ', inputValue);
+  // localStorage.setItem('todo', JSON.stringify(inputValue));
 }
 </script>
 
