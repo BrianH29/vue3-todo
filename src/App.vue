@@ -15,7 +15,7 @@ function addTodo(e) {
   const todoObj = { completed: false, title: e.value };
   todos.value.push(todoObj);
   e.value = '';
-}
+
 </script>
 
 <template>
