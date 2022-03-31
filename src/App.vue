@@ -1,7 +1,9 @@
 <script setup>
 import HeaderTodo from './components/HeaderTodo.vue';
 import InputTodo from './components/InputTodo.vue';
+import TodoList from './components/TodoList.vue';
 import { ref, watchEffect } from 'vue';
+
 
 const KEY = 'todos';
 const todos = ref(JSON.parse(localStorage.getItem(KEY) || '[]'));
@@ -12,17 +14,16 @@ watchEffect(() => {
 });
 
 function addTodo(e) {
-  const todoObj = { completed: false, title: e.value };
+  const todoObj = { completed: false, title: e.value, data: new Date() };
   todos.value.push(todoObj);
   e.value = '';
-
+}
 </script>
 
 <template>
-  <div class="wrapper">
     <HeaderTodo />
     <InputTodo @addTodo="addTodo" />
-  </div>
+    <TodoList :todoList="todos"></TodoList>
 </template>
 
 <style lang="scss" scoped></style>

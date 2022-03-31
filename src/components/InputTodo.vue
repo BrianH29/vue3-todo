@@ -11,8 +11,7 @@ function addTodo() {
 
 <template>
   <div class="input__wrapper">
-    <input type="text" v-model="inputTodo" @keyup.enter="addTodo" />
-    <font-awesome-icon icon="pencil" @click="addTodo" />
+    <input type="text" v-model="inputTodo" placeholder="what's your plan?" @keyup.enter="addTodo" />
   </div>
 </template>
 
